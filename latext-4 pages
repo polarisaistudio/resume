@@ -1,0 +1,328 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[colorlinks = true,
+            linkcolor = red,
+            urlcolor  = blue,
+            citecolor = blue,
+            anchorcolor = blue]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+\hypersetup{pdfborder = 0 0 0}
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\classesList}[4]{
+    \item\small{
+        {#1 #2 #3 #4 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textbf{\small #2} \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textbf{\small #2}\\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+
+
+\begin{document}
+
+\begin{center}
+    {\Huge \scshape Xin Wang} \\ \vspace{1pt}
+    \small
+    \raisebox{-0.1\height}\faPhone\ 610-703-5277 ~
+    \href{mailto:youremail@gmail.com}{\faEnvelope\ xinwang.play@gmail.com} ~ 
+    \href{https://linkedin.com/in/}{\faLinkedin\ https://www.linkedin.com/in/xin-wang-36202761/}  ~
+    \href{https://github.com/}{\faGithub\ polarisaistudio}
+    \vspace{-8pt}
+\end{center}
+
+%-----------Technical Skilss-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.1in, label={}]
+    \small{\item{
+     \textbf{Programming \& Scripting}{: Java, Kotlin, Python, Node.js, Dart, C/C++, C\#, R, Swift, PHP, Groovy, Bash, AWK, SQL, HTML5/CSS3/JavaScript, TypeScript, YAML, XML, LaTeX, Matlab, GCL, Protobuf.} \\
+     \textbf{Frameworks \& Libraries:}{: React, Flutter, Jetpack, AR Core, Android SDK, RxJava/RxAndroid, Dagger, Retrofit, FastAPI, Pydantic, Async/Await, RESTful APIs, Transformers, Stable Diffusion.}\\
+     \textbf{AI/ML \& Data Science:}{: TensorFlow, PyTorch, Scikit-learn, Pandas, NumPy, Matplotlib, Seaborn, PySpark, Jupyter Notebook, Weka, Anaconda, OpenAI APIs (ChatGPT, GPT), Claude, Gemini, Gemma 3n.}\\
+     \textbf{DevOps \& Cloud:}{: AWS, Docker, K8s, Terraform, Git, SVN, CI/CD (Jenkins, Gradle, Bazel, Blaze), MLOps(MLflow, SageMaker), SourceTree.}\\
+     \textbf{Testing \& Automation:}{: JUnit, Mockito, Espresso, Robolectric, GSON, Jackson.}\\
+     \textbf{Tools \& Platforms:}{: IntelliJ IDEA, Android Studio, Eclipse, Xcode, Postman, Charles Proxy, Jira, Nuance, SEO tools.}\\
+     
+    }}
+ \end{itemize}
+ \vspace{-16pt}
+
+%-----------PROJECTS-----------
+\section{Projects}
+  \resumeSubHeadingListStart
+  \resumeSubheading
+      {Polaris AI Studio}{Remote, TX}
+      {Data Scientist \& AI Engineer}{Jul 2023 -- Present}
+
+      {AI Children's Book Generator | Full-Stack AI Application}
+      \resumeItemListStart
+      \resumeItem {Architected and deployed a production-ready AI system that generates personalized children's books using Large Language Models (GPT-3.5/4) and Stable Diffusion, creating unique stories and illustrations tailored to individual children's interests, age, and personality.}
+      \resumeItem {
+Implemented multi-modal AI pipeline integrating OpenAI APIs for story generation and Stable Diffusion XL for character-consistent illustration generation, achieving 30-60 second end-to-end book creation with 4.8/5 user satisfaction scores.}
+        \resumeItem {Built robust content safety system using custom NLP classifiers and rule-based filters to ensure age-appropriate content, achieving 99.5\% safety score across 1000+ generated stories with zero inappropriate content incidents.}
+        \resumeItem {Developed scalable FastAPI backend with async processing, error recovery, and graceful degradation patterns, supporting concurrent story generation with 99.9\% uptime and automatic fallback to backup systems.}
+        \resumeItem {Designed responsive web interface using modern HTML5/CSS3/JavaScript with real-time progress tracking, form validation, and dynamic content rendering, delivering seamless user experience across desktop and mobile devices.}
+        \resumeItem{Implemented MLOps best practices including model versioning, A/B testing frameworks, performance monitoring, and cost optimization strategies, reducing generation costs by 40\% while maintaining quality.}
+        \resumeItemListEnd
+        \vspace{8pt}
+              {Kaggle Playground: Predict the Introverts from the Extroverts | Data Science Competition}
+      \resumeItemListStart
+      \resumeItem {Developed machine learning models to classify personality types (introvert vs. extrovert) using behavioral and demographic features, achieving 87\% accuracy on validation set.}
+      \resumeItem {Conducted extensive exploratory data analysis to identify patterns and correlations between personality traits and various behavioral indicators.}
+        \resumeItem {Implemented robust feature engineering pipeline including scaling, encoding categorical variables, and creating interaction features to capture complex personality relationships.}
+        \resumeItem {Experimented with ensemble methods including Random Forest, XGBoost, and LightGBM, utilizing advanced techniques like stacking and blending for improved performance.}
+        \resumeItem {Applied cross-validation strategies and hyperparameter optimization to ensure model generalization and prevent overfitting in personality prediction task.}
+        \resumeItem {Participated in Kaggle's Playground Series competition format, designed for practicing machine learning skills on synthetic datasets with real-world applications.}
+        \resumeItemListEnd
+        \vspace{8pt}
+              {Kaggle LLM Classification Finetuning: Predict Human Preference using Chatbot Arena | LLM Fine-tuning}
+      \resumeItemListStart
+      \resumeItem {Developed machine learning models to predict human preference in head-to-head battles between chatbots powered by Large Language Models using Chatbot Arena conversation data.}
+      \resumeItem {Implemented advanced natural language processing techniques to analyze prompt-response pairs from multiple LLM architectures and extract meaningful features for preference prediction.}
+        \resumeItem {Applied transformer-based models and fine-tuning strategies including parameter-efficient methods (LoRA, QLoRA) to optimize model performance on preference classification tasks.}
+        \resumeItem {Conducted comprehensive text preprocessing and feature engineering on conversational data, including response length analysis, semantic similarity scoring, and linguistic pattern extraction.}
+        \resumeItem {Utilized state-of-the-art NLP libraries including Transformers, PyTorch, and Hugging Face ecosystem for model development and evaluation on human preference datasets.}
+        \resumeItem {Demonstrated expertise in LLM evaluation methodologies and human-AI alignment research through practical application of preference learning techniques.}
+        \resumeItem{
+Achieved competitive performance in predicting user preferences between AI-generated responses, contributing to advancement in AI safety and alignment research.}
+        \resumeItemListEnd
+        \vspace{8pt}
+  \resumeSubHeadingListEnd
+\vspace{-16pt}
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+  \resumeSubheading
+      {Google}{Remote, TX}
+      {Software Engineer \& Product Manager}{Jul 2022 -- Jul 2025}
+
+      {Google Play Services is a proprietary software package produced by Google for installation on Android devices. It consists of background services and libraries for use by mobile apps running on the device. Google Mobile Services (GMS) is a collection of applications and application programming interfaces (APIs) developed by Google for manufacturers of Android devices, such as smartphones and tablets.}
+      \resumeItemListStart
+      \resumeItem {Designed and implemented CLI for play services SDK version upgrade for AGP, KGP, Gradle and other depedency artifacts.}
+      \resumeItem {Designed and implemented Jar surface differ to compare APIs extracted from 2 Jars and detect the difference between different versions of APKs.}
+        \resumeItem {Designed and implemented memory improvement strategies for IntentOperations and BoundServices in regards to the way they are parsed from the AndroidManifest.xml and structure defined as a proto message.}
+        \resumeItem {Implemented ProguardMap reader and storage in early check-in progress to find obfuscated names and deobfuscated names for classes, methods and fields in uploaded GMS APKs. Implemented an algorithm to reduce memory usage in ProguardMaps of different APK versions' early check-in process.}
+        \resumeItem {Implemented memory measurement tool to find out the most memory consuming classes and methods in the APK and locate the root cause from the code base.}
+        \resumeItem {Implemented multi-process to single-process mapping algorithm, to move components in different process so as to reduce memory usage.}
+        \resumeItem {Worked on code refactoring for different parts of GMSCore, especially Chimera, such as components like Services, BoundServices, BroadcastReceivers, and ContentProviders from different modules.}
+        \resumeItem {Reorganized modules and dependencies to reduce redundant dependency among modules and refactor code for better code readability.}
+        \resumeItem {Used OAT, DEX tools to parse APK and find out memory consumption in each part, implemented a tool to compare results from different tools and analyze the code with high memory consumption and proposed solutions.}
+        \resumeItem {Added information in the DebugActivity screen for GMS settings, so that we know which process the different modules are running on, remapped, or moved to.}
+        \resumeItem {Changed metadata for play store push changelist(CL) descriptions to include GMSCore version, channel, percentage, cl number information, also updated tests for different test stages.}
+        \resumeItem {Implemented UI and user data logic for an innovation project which checks the weather and recommends outfit according to personal preferences.}
+        \resumeItem {Added unit tests to cover any newly added logic for new functionalities or existing functionalities.}
+        \resumeItem {Took oncall rotations bi-monthly to fix bugs that breaks GMSCore builds.}
+%Based on the number of point you want to add add the "\resumeItem" for each point you want to add.
+    \resumeItemListEnd
+    \resumeSubheading
+      {USAA}{Plano, TX}
+      {Software Developer \& System Architect}{Jan 2020 -- Jul 2022}
+
+      {USAA Mobile is a customer faced mobile app. It gives the users convenient and secure account access from their mobile devices. The USAA Mobile app allows users to manage their finances, investments, insurances, find nearby ATM locations, talk to AI assistant, deposit checks and much more.}
+      \resumeItemListStart
+        \resumeItem {Refactored the app’s home page with banking accounts, investments accounts, insurance accounts and advice services information as well as notifications and personal preferences with Jetpack compose.}
+        \resumeItem {Implemented client-side assets and liabilities calculation and hide/show logic, in-app data cache, in-app messaging, in-app navigation and deep linking.}
+        \resumeItem {Updated RxJava version for all the libraries, modules, and dependency projects of the app.}
+        \resumeItem {Worked on app widget refactoring. Created UI, adapter, repository, view model and enabler in settings to
+        show banking and insurance accounts in app widget.}
+        \resumeItem {Refactored the app’s home page logic with Model-View-ViewModel (MVVM) architecture, kotlin, retrofit, okhttp, dagger injection library, RxJava, Coroutines, nav graph and Repository pattern.}
+        \resumeItem {Monitoring app performance on server side with FirebaseAnalytics, Firebase Crashlytics, Glassbox, Splunk and Adobe SiteCatalyst.}
+        \resumeItem {Implemented or refactored different modules in the app such as unboxing, test settings, app home sections, life policy, personalization cards, screens navigation, in-app messaging, catastrophe alert messages, user feedback and app monitoring with Glassbox and Tealium.}
+        \resumeItem {Worked as a system architect to provide technical guidance and proof-of-concept for new features such as unboxing, personalization, travel card, life event window, and compose refactoring to help development team and QA team understand the feature better, figure out blockers and accurately estimate effort.}
+        \resumeItem {Wrote unit tests and UI automation tests with Junit, Mockito and Espresso to make sure more than 70 percent of code logic has been covered with tests. Fixed existing flakiness in Android tests.}
+        \resumeItem {Worked on innovation projects to improve the app, such as integrating change request to CI/CD pipeline, using Optical character recognition(OCR) to speed up member registration, using fraud detection of credit card and including AR core library to improve incidents report experience.}
+        \resumeItem {Gave lectures about Android development, RxJava, Coroutines, Charles Proxy in the team and in the company. Mentored junior and mid developers on daily basis.}
+%Based on the number of point you want to add add the "\resumeItem" for each point you want to add.
+    \resumeItemListEnd
+      
+    \resumeSubheading
+      {Zimperium}{Dallas, TX}
+      {Software Developer}{Oct 2019 -- Dec 2019}
+
+      {Zimperium zIPS is an advanced mobile threat defense solution for enterprises, providing persistent, on-device protection to both corporate owned and BYOD devices. Leveraging Zimperium z9, zIPS detects threats across the kill chain: device, network, phishing, and app attacks.}
+      \resumeItemListStart
+        \resumeItem {Imported zIPS in both Android mobile device and iPhone to provide security to the devices.}
+        \resumeItem {Reduced the SDK size by replacing Protobuf with Nanopb.}
+        \resumeItem {Registered device on server side, scanned devices with zIPS to detect potential attacks and threats.}
+    \resumeItemListEnd
+    
+    \resumeSubheading
+      {FedEx}{Irving, TX}
+      {Software Developer \& Product Manager}{Jan 2016 -- Oct 2019}
+
+      {FedEx Mobile is a FedEx enterprise mobile app for customers to track packages, customize delivery options, quote a quick rate, create shipments, schedule a pickup, print a shipping label, set notifications and set user preferences.}
+      \resumeItemListStart
+        \resumeItem {Created UI with ConstraintLayout, FrameLayout, ProgressBar, TableLayout, WebView, Recyclerview and customized views.}
+        \resumeItem {Worked on shipping flow, populate user contact data as sender profile, save recipient profile in contact list, verify user entered address and give modified address according to backend API call, populate signature options, pickup packages selections, and packages types selections according to backend data. Work on create shipment with all user selections and print label.}
+        \resumeItem {Worked on tracking flow, tracking summary page, register delivery address, FedEx Delivery Manager(FDM) options such as vacation hold, hold at location, sign for package, add delivery instructions and customized delivery options.}
+        \resumeItem {Implemented user settings screens, including country selection, notification preferences selection, legal information, frequently asked questions and help screens.}
+        \resumeItem {Enabled localization for 21 languages. Use Lingoport to identify translation issues.}
+        \resumeItem {Called REST APIs from mobile end for package information, services information, user profile information, user account information, address list information. Use Volley to create and parse requests, add headers and use corresponding HTTP methods for those requests. Consume backend JSON responses with Json Parser and populate data on UI.}
+        \resumeItem {Used Model-View-Controller(MVC) model and later refactor code using Model-View-Presenter(MVP) model. Use presenters to handle logic and update UI. Use reactive programming like RxJava and RxAndroid for backend call in usecases.}
+        \resumeItem {Integrated third party module Nuance to enable Virtual Assistant(VA) chat session for customer help.}
+        \resumeItem {Worked on innovation projects to improve FedEx mobile app such as speech interaction, text recognition and information auto population, image recognition and classification, accessibility for the blind people, including package delivery photo in notifications, provide encoding/decoding Chinese character solutions to backend.}
+        \resumeItem {Got 1st place in Hackathon in Dallas Tech Center(DTC) respectively in 2016 \& 2018.}
+    \resumeItemListEnd
+
+    \resumeSubheading
+      {FIS Global}{Orlando, FL}
+      {Software Developer}{Sep 2015 -- Dec 2015}
+
+      {RBC (Caribbean) is a mobile bank app for Royal Bank of Canada, especially for Caribbean users. It has user authorization, account details and history, transfer money, pay bills, manage payee, and other common banking account functionalities.}
+      \resumeItemListStart
+        \resumeItem {Worked on PVQ screens. Got pvq questions from the server side and show on screen. Validated user input and sent them to the server. According to the feedback from server, show error dialog or go to next stage of verification.}
+        \resumeItem {Implemented UI and services for pending transfers and history transfers. Populating recycler view and details page according to server response. Implement sorting and grouping functionality.}
+        \resumeItem {Used domain driven design for software model, including ui, services, repositories and models.}
+        \resumeItem {Worked on manage payee screens. UI elements include scroll view, frame layout, swiper layout and progress bar. Enable edit or delete mode, in which users can edit or delete payee items. Implement swiper layout animation.}
+    \resumeItemListEnd
+    
+    \resumeSubheading
+      {SK C\&C Inc.}{Alpharetta, GA}
+      {Software Developer}{Nov 2014 -- May 2015}
+      
+      {Vodafone Wallet is a mobile wallet app that integrates payment card, membership card, loyalty card and voucher card. Vodafone customers can use this app to make payment and show card information. This app easily manages the users’ SmartPass account, which is linked to their credit card, debit card or bank account.}
+      \resumeItemListStart
+        \resumeItem {Refactored UI/UX layouts of home screen. Various UI components are used such as Popup Dialog, ViewPager, Button, TextView, ImageView, Gallery, ListView, GridView, CardView, Actionbar, Activity, Fragments and Tabs.}
+        \resumeItem {Implemented button animation and 3-D cubic viewpager transformer when users scroll horizontally and vertically. Title gallery scrolls together with fragments.}
+        \resumeItem {Implemented adapters for different kinds of layouts, such as card list view, grid view and carousal view.}
+        \resumeItem {Enabled localization for different countries and languages - Spain, Germany, Italy, Hungary, England and
+Switzerland.}
+        \resumeItem {Defined popup layouts for different error messages such as network error or pre-authentication error.}
+        \resumeItem {Integrated third party library NotificationEnabler to enable push notifications and show special notification layout.}
+        \resumeItem {Used third party library SecLib and SM API to log events on the server side when users trigger certain events such as clicking on a button, device swap, terms and conditions upgrade, changing SIM card or starting a new page.}
+        \resumeItem {Implemented pre-authentication mechanism when users are launching from SP GUI page to Vodafone wallet.}
+    \resumeItemListEnd
+
+    \resumeSubheading
+      {WINSLAB}{Bethlehem, PA}
+      {Research Assistant}{Aug 2012 -- Aug 2013}
+
+      {Smartphone Enabled Healthcare System is a mobile healthcare system. This project builds a multimodal sensing system which provides continuous and efficient monitoring of users’ activities using mobile phones and wearable sensing devices.}
+      \resumeItemListStart
+        \resumeItem {Built an Android app to record and analyze data. Build classifiers on the server end to classify behaviors and environments.}
+        \resumeItem {Enabled sensors such as GPS, accelerometers, microphone and gyroscope. Record data in the background using services. Enabled audio and camera recording.}
+        \resumeItem {Analyzed and correlated different sensor streams to infer certain behaviors as well as possible environmental factors that may trigger such behaviors.}
+        \resumeItem {Embedded classifiers such as Support Vector Machine (SVM), Decision Tree, K Nearest Neighbors (KNN) in the mobile app as well as on the server end, so that classification can be done both in online mode and in offline mode.}
+        \resumeItem {Used audio analysis tools and adjusted different sampling frequency to extract features from behavioral and audio recordings such as MFCC, pitch and peak value.}
+        \resumeItem {Enabled push notification functionality on the client end, parents and caregivers can get the real-time well-being information.}
+        \resumeItem {Used SQLite database to store data locally in offline mode. Once network is enabled, the data can be sent to the server end.}
+        \resumeItem {Used Matlab audio signal processing tools to extract audio features and categorize environments.}
+    \resumeItemListEnd
+  \resumeSubHeadingListEnd
+\vspace{-16pt}
+% adjust vscape based on the space you want to leave between each section.
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Lehigh University}{Bethlehem, PA}
+      {Master of Science in Computer Science}{Aug 2012 -- Aug 2014}
+      %leave a line after this
+            
+    \resumeSubheading
+      {University of Chinese Academy of Sciences}{Beijing, China}
+      {Master of Engineering in Signal Processing}{Aug 2009 -- May 2012}
+      %leave a line after this
+
+    \resumeSubheading
+      {China University of Mining and Technology}{Jiangsu, China}
+      {Bachelor of Engineering in Electronics Information Science and Technology
+}{Sep 2005 -- May 2009}
+      %leave a line after this
+      
+  \resumeSubHeadingListEnd
+\vspace{-16pt}
+
+
+
+\end{document}
