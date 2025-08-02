@@ -1,0 +1,271 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[colorlinks = true,
+            linkcolor = red,
+            urlcolor  = blue,
+            citecolor = blue,
+            anchorcolor = blue]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+
+\hypersetup{pdfborder = 0 0 0}
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\classesList}[4]{
+    \item\small{
+        {#1 #2 #3 #4 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textbf{\small #2} \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textbf{\small #2}\\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+    {\Huge \scshape Xin Wang} \\ \vspace{1pt}
+    \small
+    \raisebox{-0.1\height}\faPhone\ 610-703-5277 ~
+    \href{mailto:xinwang.play@gmail.com}{\faEnvelope\ xinwang.play@gmail.com} ~ 
+    \href{https://linkedin.com/in/xin-wang-36202761}{\faLinkedin\ xin-wang-36202761}  ~
+    \href{https://github.com/polarisaistudio}{\faGithub\ polarisaistudio}
+    \vspace{-8pt}
+\end{center}
+
+%-----------PROFESSIONAL SUMMARY-----------
+\section{Professional Summary}
+\begin{itemize}[leftmargin=0.1in, label={}]
+    \small{\item{
+        AI Engineer and Software Development Leader with 10+ years building scalable applications and AI-driven systems at Google, USAA, and FedEx. Proven expertise in Android development, machine learning, and cloud architecture with measurable impact: 40\% cost reduction, 35\% performance optimization, and systems serving millions of users. Currently developing production AI applications while leading cross-functional teams to deliver innovative, high-impact solutions.
+    }}
+\end{itemize}
+\vspace{-16pt}
+
+%-----------TECHNICAL SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.1in, label={}]
+    \small{\item{
+     \textbf{Programming Languages}{: Java, Kotlin, Python, JavaScript/TypeScript, Dart, C++, C\#, Swift, SQL, R, PHP} \\
+     \textbf{Mobile \& Frontend}{: Android SDK, Flutter, React, Jetpack Compose, RxJava, HTML5/CSS3, iOS Development} \\
+     \textbf{AI/ML \& Data Science}{: TensorFlow, PyTorch, Scikit-learn, Pandas, OpenAI APIs, Transformers, PySpark, Jupyter} \\
+     \textbf{Backend \& APIs}{: Node.js, FastAPI, RESTful APIs, Pydantic, Async/Await, Microservices, GraphQL} \\
+     \textbf{Cloud \& DevOps}{: AWS, Docker, Kubernetes, CI/CD (Jenkins, Gradle), Git, MLOps (MLflow, SageMaker), Terraform} \\
+     \textbf{Databases \& Tools}{: MySQL, PostgreSQL, SQLite, Redis, JUnit, Mockito, Espresso, Android Studio, IntelliJ IDEA}
+    }}
+ \end{itemize}
+ \vspace{-16pt}
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+  
+  \resumeSubheading
+      {Polaris AI Studio}{Remote, TX}
+      {Data Scientist \& AI Engineer}{Jul 2023 -- Present}
+      \resumeItemListStart
+        \resumeItem{Architected and deployed production-ready AI system generating personalized children's books using GPT-4 and Stable Diffusion XL}
+        \resumeItem{Achieved 30-60 second end-to-end book creation with 4.8/5 user satisfaction across 1000+ generated stories}
+        \resumeItem{Implemented multi-modal AI pipeline with content safety system achieving 99.5\% safety score and zero inappropriate incidents}
+        \resumeItem{Developed scalable FastAPI backend with async processing, achieving 99.9\% uptime and 40\% cost reduction}
+        \resumeItem{Built responsive web interface with real-time progress tracking supporting 500+ active users}
+        \resumeItem{Implemented MLOps best practices including A/B testing, model versioning, and performance monitoring}
+        \resumeItem{Integrated payment processing and user authentication system, improving user experience and security}
+        \resumeItemListEnd
+  
+  \resumeSubheading
+      {Google}{Remote, TX}
+      {Software Engineer}{Jul 2022 -- Jul 2025}
+      \resumeItemListStart
+        \resumeItem{Designed CLI tool for Play Services SDK upgrades across AGP, KGP, and Gradle dependencies, reducing upgrade time by 60\%}
+        \resumeItem{Built Jar surface differ to detect API differences between APK versions, preventing 15+ production incidents}
+        \resumeItem{Optimized IntentOperations and BoundServices memory usage by 35\% through improved parsing algorithms}
+        \resumeItem{Implemented ProguardMap reader reducing memory consumption by 40\% during APK early check-in process}
+        \resumeItem{Developed multi-process to single-process mapping algorithm, decreasing GMSCore memory footprint by 25\%}
+        \resumeItem{Refactored Chimera components (Services, BroadcastReceivers, ContentProviders) to improve code maintainability, resulting in easier future updates and reduced bugs}
+        \resumeItem{Created memory analysis tools using OAT/DEX to identify high-consumption code and optimize performance}
+        \resumeItem{Maintained 99.5\% build success rate through bi-monthly oncall rotations and proactive bug fixes}
+        \resumeItem{Led code refactoring initiatives across multiple modules, reducing technical debt by 30\%}
+        \resumeItemListEnd
+
+    \resumeSubheading
+      {USAA}{Plano, TX}
+      {Software Developer \& System Architect}{Jan 2020 -- Jul 2022}
+      \resumeItemListStart
+        \resumeItem{Refactored mobile app home page with Jetpack Compose, improving user engagement by 25\%}
+        \resumeItem{Implemented client-side financial calculations and caching, reducing API calls by 40\%}
+        \resumeItem{Upgraded RxJava across all app modules, improving performance and reducing crashes by 30\%}
+        \resumeItem{Built app widget for banking/insurance accounts using MVVM architecture and Repository pattern, enhancing user accessibility and interaction}
+        \resumeItem{Monitored app performance using Firebase Analytics and Crashlytics, maintaining 99.8\% uptime}
+        \resumeItem{Architected POCs for new features (unboxing, personalization, travel card) reducing development time by 20\%}
+        \resumeItem{Achieved 70\%+ code coverage through comprehensive unit and UI testing with JUnit, Mockito, Espresso}
+        \resumeItem{Led innovation projects including OCR member registration and AR-based incident reporting}
+        \resumeItem{Mentored 5+ junior/mid-level developers on Android development and RxJava best practices}
+        \resumeItem{Collaborated with UX/UI teams to implement accessibility features, improving app store ratings by 0.3 stars}
+        \resumeItemListEnd
+
+    \resumeSubheading
+      {Zimperium}{Dallas, TX}
+      {Software Developer}{Oct 2019 -- Dec 2019}
+      \resumeItemListStart
+        \resumeItem{Developed mobile security features for the zIPS threat defense solution, enhancing protection for enterprise clients and improving user satisfaction}
+        \resumeItem{Reduced SDK size by 30\% by replacing Protobuf with Nanopb for mobile optimization}
+        \resumeItem{Implemented device registration and threat scanning functionality for Android and iOS platforms, ensuring seamless integration and enhancing security measures}
+        \resumeItemListEnd
+        
+    \resumeSubheading
+      {FedEx}{Irving, TX}
+      {Software Developer \& Product Manager}{Jan 2016 -- Oct 2019}
+      \resumeItemListStart
+        \resumeItem{Developed shipping flow UI with ConstraintLayout and RecyclerView, supporting 10M+ monthly users}
+        \resumeItem{Built package tracking system with delivery customization options and FedEx Delivery Manager integration}
+        \resumeItem{Implemented user settings and localization for 21 languages using Lingoport translation tools}
+        \resumeItem{Integrated REST APIs using Volley for package/user data, handling 1M+ API calls daily}
+        \resumeItem{Refactored app from MVC to MVP architecture with RxJava, improving code maintainability by 40\%}
+        \resumeItem{Integrated Nuance Virtual Assistant for customer support, reducing support tickets by 25\%}
+        \resumeItem{Won 1st place in company Hackathons (2016 \& 2018) for mobile innovation projects}
+        \resumeItem{Managed product roadmap and coordinated with stakeholders to prioritize feature development}
+        \resumeItemListEnd
+
+    \resumeSubheading
+      {FIS Global}{Orlando, FL}
+      {Software Developer}{Sep 2015 -- Dec 2015}
+      \resumeItemListStart
+        \resumeItem{Built PVQ verification screens with real-time validation and error handling for RBC Caribbean banking app, enhancing user experience and reducing input errors}
+        \resumeItem{Implemented transfer history and payee management features with sorting/grouping functionality}
+        \resumeItem{Applied domain-driven design architecture across UI, services, repositories, and models}
+        \resumeItem{Collaborated with backend team to optimize API performance, reducing response times by 20\%}
+        \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+\vspace{-16pt}
+
+%-----------PROJECTS-----------
+\section{Projects}
+  \resumeSubHeadingListStart
+  
+  \resumeProjectHeading
+      {\textbf{Kaggle ML Competitions} | \emph{Python, PyTorch, Scikit-learn, Transformers}}{2023 -- 2025}
+      \resumeItemListStart
+        \resumeItem{Personality Classification: Achieved 87\% accuracy using ensemble methods (Random Forest, XGBoost, LightGBM)}
+        \resumeItem{LLM Preference Prediction: Fine-tuned transformer models using LoRA/QLoRA for chatbot preference classification}
+        \resumeItem{Applied advanced feature engineering, cross-validation, and hyperparameter optimization techniques}
+        \resumeItem{Ranked in top 15\% of participants across multiple machine learning competitions}
+        \resumeItemListEnd
+
+  \resumeProjectHeading
+      {\textbf{Mobile Healthcare Monitoring System} | \emph{Android, Java, Machine Learning}}{2012 -- 2013}
+      \resumeItemListStart
+        \resumeItem{Built Android app for continuous health monitoring using smartphone sensors (GPS, accelerometer, microphone)}
+        \resumeItem{Implemented SVM, Decision Tree, and KNN classifiers for real-time behavior analysis and prediction}
+        \resumeItem{Developed offline/online data processing pipeline with SQLite local storage and server synchronization}
+        \resumeItem{Created push notification system for caregivers with real-time health status updates}
+        \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+\vspace{-16pt}
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Lehigh University}{Bethlehem, PA}
+      {M.S. in Computer Science}{Aug 2012 -- Aug 2014}
+            
+    \resumeSubheading
+      {University of Chinese Academy of Sciences}{Beijing, China}
+      {M.Eng. in Signal Processing}{Aug 2009 -- May 2012}
+
+    \resumeSubheading
+      {China University of Mining and Technology}{Jiangsu, China}
+      {B.Eng. in Electronics Information Science and Technology}{Sep 2005 -- May 2009}
+      
+  \resumeSubHeadingListEnd
+\vspace{-8pt}
+
+%-----------ACHIEVEMENTS-----------
+\section{Achievements \& Certifications}
+ \begin{itemize}[leftmargin=0.1in, label={}]
+    \small{\item{
+     \textbf{Awards}{: 1st Place FedEx Hackathon (2016, 2018), Top 15\% Kaggle ML Competitions (2023)} \\
+     \textbf{Publications}{: Research contributions in mobile healthcare and signal processing domains} \\
+     \textbf{Leadership}{: Mentored 10+ developers, Led technical presentations and innovation projects}
+    }}
+ \end{itemize}
+
+\end{document}
